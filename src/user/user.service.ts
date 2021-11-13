@@ -17,7 +17,7 @@ export class UserService {
 
     async createUsers(body: CreateUserDto) {
         try {
-            const { name, studentNo } = body;
+            const { pwd, studentNo } = body;
 
             // validation 
             const checkUser = await this.userRepository.findOne({ studentNo: studentNo, status: 'ACTIVE' });
@@ -31,7 +31,7 @@ export class UserService {
 
             userReg = {     
                 idx: userReg.idx,
-                name: name,
+                pwd: pwd,
                 studentNo: studentNo,
                 status: userReg.status
             }
