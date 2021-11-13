@@ -1,0 +1,11 @@
+{
+    "type": "mysql",
+    "host": "database.ccnujuyzzot8.ap-northeast-2.rds.amazonaws.com",
+    "port": 3306, 
+    "username": "admin",
+    "password": "hyunbin7231",
+    "database": "seedVote",
+    "entities": ["dist/src/**/*.entity{.ts,.js}"],
+    "synchronize": false,
+    "bigNumberStrings": false
+}
